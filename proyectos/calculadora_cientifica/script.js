@@ -115,9 +115,11 @@ function insertarTrig(funcion) {
 // Función para actualizar la pantalla
 function actualizarPantalla() {
     if (funcionSeleccionada) {
+        // Si hay una función seleccionada, mostrar la función con el ángulo
         pantalla.value = `${funcionSeleccionada}(${angulo})`;
     } else {
-        pantalla.value = angulo;
+        // Si no hay función seleccionada, mostrar el valor actual de la pantalla
+        // No sobrescribir con `angulo`, ya que puede estar vacío
     }
 }
 
