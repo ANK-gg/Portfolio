@@ -16,7 +16,7 @@
                 <button id="btnRadianes" onclick="cambiarModo('radianes')">Radianes</button>
             </div>
 
-            <input type="text" id="pantalla" readonly>
+            <input type="text" id="pantalla">
             <div class="botones">
                 <button onclick="borrar()" style="background-color: red;" >C</button>
                 <button onclick="insertar('(')">(</button>
@@ -51,8 +51,10 @@
                 <button onclick="insertar('Math.sqrt(')">√</button>
                 <button onclick="insertar('Math.PI')">π</button>
                 <button onclick="insertar('Math.E')">e</button>
-                <button onclick="factorial()">x!</button>
+                <button onclick="factorial()">!</button>
+                <button onclick="insertar('x')">x</button>
             </div>
+            
             <div class="toggle-contenedor">
                 <button onclick="crearGrafica()">Crear Gráfica</button>
             </div>

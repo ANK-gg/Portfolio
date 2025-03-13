@@ -130,6 +130,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     background-color: white;
+    margin-top: 20px;
 }
 .contenedor-principal {
     display: flex;
@@ -148,4 +149,7 @@ button:hover {
 }
 #boton_borrar{
     background-color: red;
+}
+#pantalla {
+    caret-color: black; /* Color del cursor */
 }
