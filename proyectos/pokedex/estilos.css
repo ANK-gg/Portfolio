@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+} 
+
+body {
+    color: black;
+    padding-bottom: 50px; /* Para que el footer no tape contenido */
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 300px; /* Ajustado para evitar problemas en pantallas pequeñas */
+    max-width: 100%;
+}
+
+.busqueda-container {
+    display: flex;
+    gap: 10px;
+}
+
+.encabezado input {
+    padding: 8px;
+    border: 1px solid black; /* Antes era solo 'border: black;' */
+    border-radius: 5px;
+}
+
+.encabezado button {
+    padding: 8px 12px;
+    background-color: yellow; 
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.encabezado button:hover {
+    background-color: #ff6b6b; /* Rojo más claro para que el hover no sea tan agresivo */
+}
+
+.mostrador {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.pokemon-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pokemon-card img {
+    width: 100px;
+}
+
+.pokemon-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pokemon-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px; /* Aumenta la altura */
+    background-color: red;
+    color: black;
+    text-align: center;
+    font-size: 24px; /* Texto más grande */
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+

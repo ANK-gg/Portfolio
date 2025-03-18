@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="imagenes/logo.jpeg" alt="logopokemon">
+
+        <div class="busqueda-container">
+            <input type="text" id="busqueda" name="busqueda" class="busqueda" placeholder="Nombre del Pokémon...">
+            <button onclick="buscarPokemon()">BUSCAR</button>
+            <button id="volver">Volver inicio</button>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <div class="mostrador" id="mostrador">
+            <div class="pokemon-card">
+                <img id="pokemon-img" src="imagenes/default.png" alt="Pokémon">
+                <h2 id="pokemon-nombre">Nombre del Pokémon</h2>
+                <p><strong>Tipo:</strong> <span id="pokemon-tipo">---</span></p>
+                <p><strong>Peso:</strong> <span id="pokemon-peso">---</span> kg</p>
+                <p><strong>Altura:</strong> <span id="pokemon-altura">---</span> m</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>¡Búscalos a todos!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
