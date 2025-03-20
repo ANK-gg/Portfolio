@@ -58,33 +58,6 @@ header img {
     padding: 10px;
 }
 
-.pokemon-card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.pokemon-card img {
-    width: 100px;
-}
-
-.pokemon-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.pokemon-card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 
 footer {
     position: fixed;
@@ -101,3 +74,65 @@ footer {
     justify-content: center; /* Centrar horizontalmente */
 }
 
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    background-color: white;
+    width: 180px; /* Ajusta el tamaño según necesites */
+    height: 260px;
+    position: relative; 
+}
+.pokemon-card img {
+    width: auto;
+    padding: 15px;
+    height: auto;
+    background-color: white;
+}
+.pokemon-img-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    min-height: 120px; /* Ajusta este valor según sea necesario */
+}
+
+/* Imagen del Pokémon */
+.pokemon-img-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px; /* Puedes aumentar este valor si las imágenes parecen muy pequeñas */
+    display: block;
+    margin: auto;
+}
+
+/* Información del Pokémon */
+.informacion {
+    background-color: gray;
+    padding: 12px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.informacion h2 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.informacion p {
+    margin: 3px 0;
+    font-size: 14px;
+}

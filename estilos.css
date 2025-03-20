@@ -18,13 +18,12 @@ body{
 
 header{
     display: flex;
-    background-color: black;
+    background-color: #161617;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #111;
     color: white;
     padding: 10px 20px;
     text-align: center;

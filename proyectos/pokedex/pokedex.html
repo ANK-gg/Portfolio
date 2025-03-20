@@ -15,23 +15,27 @@
             <button onclick="buscarPokemon()">BUSCAR</button>
             <button id="volver">Volver inicio</button>
         </div>
-
     </header>
 
     <main class="contenedor">
         <div class="mostrador" id="mostrador">
             <div class="pokemon-card">
-                <img id="pokemon-img" src="imagenes/default.png" alt="Pokémon">
-                <h2 id="pokemon-nombre">Nombre del Pokémon</h2>
-                <p><strong>Tipo:</strong> <span id="pokemon-tipo">---</span></p>
-                <p><strong>Peso:</strong> <span id="pokemon-peso">---</span> kg</p>
-                <p><strong>Altura:</strong> <span id="pokemon-altura">---</span> m</p>
+                <div class="pokemon-img-container">
+                    <img src="URL_DEL_POKEMON" alt="Pokémon">
+                </div>
+                <div class="informacion">
+                    <h2>#1 BULBASAUR</h2>
+                    <p><strong>Tipo:</strong> grass, poison</p>
+                    <p><strong>Peso:</strong> 6.9 kg</p>
+                    <p><strong>Altura:</strong> 0.7 m</p>
+                </div>
             </div>
+            
         </div>
     </main>
 
     <footer>
-        <p>¡Búscalos a todos!</p>
+        <p></p>
     </footer>
 
     <script src="script.js"></script>

@@ -19,20 +19,24 @@ async function obtenerPokemones() {
             const datosPokemon = await respuestaPokemon.json();
             
             const div = document.createElement("div");
-            div.classList.add("pokemon-card");
-            div.innerHTML = `
-                <img src="${datosPokemon.sprites.front_default}" alt="${datosPokemon.name}">
-                <h2>#${pokemon.id} ${datosPokemon.name.toUpperCase()}</h2>
-                <p><strong>Tipo:</strong> ${datosPokemon.types.map(t => t.type.name).join(", ")}</p>
-                <p><strong>Peso:</strong> ${datosPokemon.weight / 10} kg</p>
-                <p><strong>Altura:</strong> ${datosPokemon.height / 10} m</p>
-            `;
-            mostrador.appendChild(div);
+                div.classList.add("pokemon-card");
+                    div.innerHTML = `
+                    <img src="${datosPokemon.sprites.front_default}" alt="${datosPokemon.name}">
+                    <div class="informacion">
+                   <h2>#${pokemon.id} ${datosPokemon.name.toUpperCase()}</h2>
+                       <p><strong>Tipo:</strong> ${datosPokemon.types.map(t => t.type.name).join(", ")}</p>
+                       <p><strong>Peso:</strong> ${datosPokemon.weight / 10} kg</p>
+                        <p><strong>Altura:</strong> ${datosPokemon.height / 10} m</p>
+                 </div>
+`;
+mostrador.appendChild(div);
+
         });
     } catch (error) {
         console.error("Error al obtener los Pokémon:", error);
     }
 }
+
 
 function buscarPokemon() {
     const filtro = busquedaInput.value.toLowerCase();
@@ -50,3 +54,4 @@ busquedaInput.addEventListener("input", buscarPokemon);
 document.getElementById("volver").addEventListener("click", function() {
     window.location.href = "../../index.html";
 });
+
