@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <a href="../../index.html" class="btn-volver">Volver</a>
+    <div class="contenedor-principal">
+        <!-- Calculadora -->
+        <div class="calculadora">
+            <div class="toggle-contenedor">
+                <button id="btnGrados" class="activo" onclick="cambiarModo('grados')">Grados</button>
+                <button id="btnRadianes" onclick="cambiarModo('radianes')">Radianes</button>
+            </div>
+
+            <input type="text" id="pantalla">
+            <div class="botones">
+                <button onclick="borrar()" style="background-color: red;" >C</button>
+                <button onclick="insertar('(')">(</button>
+                <button onclick="insertar(')')">)</button>
+                <button onclick="insertar('/')">/</button>
+
+                <button onclick="insertar('7')">7</button>
+                <button onclick="insertar('8')">8</button>
+                <button onclick="insertar('9')">9</button>
+                <button onclick="insertar('*')">*</button>
+
+                <button onclick="insertar('4')">4</button>
+                <button onclick="insertar('5')">5</button>
+                <button onclick="insertar('6')">6</button>
+                <button onclick="insertar('-')">-</button>
+
+                <button onclick="insertar('1')">1</button>
+                <button onclick="insertar('2')">2</button>
+                <button onclick="insertar('3')">3</button>
+                <button onclick="insertar('+')">+</button>
+
+                <button onclick="insertar('0')">0</button>
+                <button onclick="insertar('.')">.</button>
+                <button onclick="calcular()" style="background-color: rgb(15, 124, 124);">=</button>
+                <button onclick="insertar('**')">xʸ</button>
+
+                <button onclick="insertarTrig('sin')">sin</button>
+                <button onclick="insertarTrig('cos')">cos</button>
+                <button onclick="insertarTrig('tan')">tan</button>
+                <button onclick="insertar('Math.log10(')">log</button>
+
+                <button onclick="insertar('Math.sqrt(')">√</button>
+                <button onclick="insertar('Math.PI')">π</button>
+                <button onclick="insertar('Math.E')">e</button>
+                <button onclick="factorial()">!</button>
+                <button onclick="insertar('x')">x</button>
+            </div>
+            
+            <div class="toggle-contenedor">
+                <button onclick="crearGrafica()">Crear Gráfica</button>
+            </div>
+        </div>
+
+        <!-- Contenedor de la gráfica -->
+        <div class="contenedor-grafico">
+            <canvas id="grafica"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

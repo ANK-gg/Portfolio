@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="imagen/logo.jpeg" alt="logopokemon">
+
+        <div class="busqueda-container">
+            <input type="text" id="busqueda" name="busqueda" class="busqueda" placeholder="Nombre del Pokémon...">
+            <button onclick="buscarPokemon()">BUSCAR</button>
+            <button id="volver">Volver inicio</button>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <div class="mostrador" id="mostrador">
+            <div class="pokemon-card">
+                <div class="pokemon-img-container">
+                    <img src="URL_DEL_POKEMON" alt="Pokémon">
+                </div>
+                <div class="informacion">
+                    <h2>#1 BULBASAUR</h2>
+                    <p><strong>Tipo:</strong> grass, poison</p>
+                    <p><strong>Peso:</strong> 6.9 kg</p>
+                    <p><strong>Altura:</strong> 0.7 m</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

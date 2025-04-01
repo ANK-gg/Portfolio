@@ -1,0 +1,47 @@
+*{
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+body{
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+canvas{
+    border: 2px solid black;
+    background-color: rgb(164, 228, 76);
+}
+#volver{
+    background-color: red;
+    border: none
+}
+
+#reiniciar{
+    
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#volver{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(240, 20, 20);
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#reiniciar:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#volver:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
