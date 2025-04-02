@@ -2,7 +2,9 @@
 <html lang="es"> 
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +20,9 @@
             <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
             <nav id="nav" role="navigation" aria-label="Menú principal">
                 <ul>
-                    <li><a href="#info" aria-current="page">Acerca de</a></li> <!-- Enlaces internos mejorados -->
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li> <!-- Añadí sección de contacto -->
+                    <li><a href="#info">Acerca de</a></li> 
+                    <li><a href="#proyectos">Proyectos</a></li> 
+                    <li><a href="#contacto">Contacto</a></li> 
                 </ul>
             </nav>
         </div>
@@ -123,7 +125,7 @@
 
     <!-- PROYECTOS ------------------------------------------------- -->
 
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         
             <h2>Mis proyectos:</h2>
           
@@ -172,21 +174,42 @@
         </section>
     <!-- FOOTER------------------------------------------------- -->
         
-        <footer role="contentinfo">
-            <div class="footer-content">
-                <p></p>
-                <div class="social-links">
-                    <a href="https://github.com/tuperfil" target="_blank" rel="noopener noreferrer" 
-                       aria-label="GitHub">
-                        <svg><!-- Icono SVG de GitHub --></svg>
-                    </a>
-                    <a href="https://linkedin.com/in/tuperfil" target="_blank" rel="noopener noreferrer" 
-                       aria-label="LinkedIn">
-                        <svg><!-- Icono SVG de LinkedIn --></svg>
-                    </a>
-                </div>
+    <footer role="contentinfo" id="contacto">
+        <div class="footer-content">
+            <h3>Contáctame</h3>
+            
+            <div class="contact-info">
+                <a href="mailto:sacsaron.32@gmail.com" class="email-link">
+                    sacsaron.32@gmail.com
+                </a>
             </div>
-        </footer>
+            
+            <div class="social-links">
+                <a href="https://github.com/ANK-gg" target="_blank" rel="noopener noreferrer" 
+                   aria-label="GitHub" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    GitHub
+                </a>
+                
+                <!-- Opcional: Si quieres agregar LinkedIn en el futuro -->
+                <!--
+                <a href="https://linkedin.com/in/tuperfil" target="_blank" rel="noopener noreferrer" 
+                   aria-label="LinkedIn" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn
+                </a>
+                -->
+            </div>
+            
+            <p class="copyright">© 2023 Rodrigo Dev. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
